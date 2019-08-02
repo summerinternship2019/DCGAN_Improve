@@ -31,8 +31,9 @@ Python 3.6.3 |Anaconda, Inc.| (default, Oct 13 2017, 12:02:49)
 Type "help", "copyright", "credits" or "license" for more information.
 
 create anaconda environment
-conda env create -f environment.yml
-source activate tfpgu
+
+    conda env create -f environment.yml
+    source activate tfpgu
 ## Usage
 ### local run
    `>> python pokemon_v1.py`
