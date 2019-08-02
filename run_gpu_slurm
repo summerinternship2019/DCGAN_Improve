@@ -1,0 +1,19 @@
+#!/bin/bash -l
+# Set your minimum acceptable walltime, format: day-hours:minutes:seconds
+#SBATCH --time=0-50:00:00
+#SBATCH --job-name pokegan72
+#SBATCH --output=slurm.out
+#SBATCH --error=slurm.err
+#SBATCH --nodelist compute024
+#SBATCH --partition=gpu
+##SBATCH --gres=gpu:0              # Number of GPU(s) per node
+#SBATCH --mem=4000M               # memory per node
+pwd; hostname; date
+
+source activate pygpu
+run="python pokemon_v1.py"
+
+echo $run
+$run
+date
+
