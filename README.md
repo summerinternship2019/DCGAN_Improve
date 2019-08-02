@@ -46,3 +46,5 @@ base in 'sinfo' cluster information
     > sbatch run_gpu_slurm
 
 ## Result
+
+![](https://github.com/summerinternship2019/DCGAN_Improve/blob/master/poke72.gif)
